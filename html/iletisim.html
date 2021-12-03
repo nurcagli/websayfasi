@@ -25,13 +25,76 @@
 			</div>
 
 			<div style="padding-left:16px">
-			  <h2>Responsive Topnav Example</h2>
-			  <p>Resize the browser window to see how it works.</p>
+			  <h2></h2>
+			  <p></p>
 			</div>
+				
+			
+				
+				  <div class ="iletisim">
+					  <div style = "background-color: #8c8c93">
+							<div style="padding:10px 40px">
+							<h3>İletişim Formu </h3>
+							<p></p>
+							
+						  <form  action="/action_page.php">
+						   
+								<label for="name"> <h6> İsminiz: </h6> </label> <br>
+								<input type="text" id="name" name="İsim" size="45" value=""><br>
+							
+								<label for="phone"> <h6> Telefon Numaranız: </h6> </label> <br>
+								<input type="tel" id="phone" name="phone" size="45" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+								<br>
+								
+								<label for="email"> <h6> Mail Adresiniz: </h6> </label><br>
+								<input type="email" id="email" name="email" size="45" value="ornek@gmail.com">
+								<br>
+								<br>
+						
+								<h6> Hangi Tür Kitapların Sitemize Eklenmesini İstersiniz? </h6>
+								 <input list="turler" size="30">
+								<datalist id="turler">
+								<option value="Dünya Klasikleri">
+								<option value="Türk Edebiyatı Klasikleri">
+								<option value="Fantastik Kitaplar">
+								<option value="Bilim & Kurgu Kitapları">
+								<option value="Sağlık & Yaşam">
+								<option value ="Dram">
+								<option value= "Aşk Konulu Kitaplar">
+								</datalist>
+								<br>
+								<br>
+								
+								<h6>Mesaj Bırakın:  <h6>
+								<textarea name="message" rows="10" cols="45" size="50">Buraya mesajınızı yazabilirsiniz.
+								</textarea>
+								<br>
+								
+								
+							<input type="submit" value="Submit">
+						
+						  </form>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="iletisim">
+					<div style ="background-color: #8c8c93" >
+						<div class= "baslik"> <h6> Bizi ziyaret edebilirsiniz. </h6> </div>
+							<div style="padding:5px 10px 20px 18px" >
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773977.2612696731!2d29.910136573119285!3d40.73235259887941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb5169652181b%3A0xeba807a5c78d9201!2sSakarya!5e0!3m2!1str!2str!4v1638526836087!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+							</iframe>
+							<br> <br>
+							<p> iletişim <br>
+							bilgilerini ekle <br>
+						
+					
+							</p>
+							
+							</div>
+						</div>
+					</div>
+		</div>
 
-				<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ad corporis ipsa quae quidem impedit mollitia ipsam vitae fugit hic! Quia numquam illum architecto error fugiat odit inventore minima deserunt!</p>
-				
-				
 				<script>
 					function myFunction() {
 						var x = document.getElementById("myTopnav");
@@ -46,6 +109,6 @@
 				
 				<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-		</div>
+	
 	</body>
 </html>

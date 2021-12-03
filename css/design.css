@@ -1,3 +1,99 @@
+/* responsive galeri icin stiller */
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 5px solid #d8bfd8;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive { 	/* ekran boyutu 700 pxden buyuk ekranlar ıcın dort fotografı yan yana gosterecek.   */
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) { /* ekran boyutu 700 pxden kücük ise fotografları ikili göstericek     */
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) { /*  ekran boyutu 500 pxden kücük ise fotograflari tekli gosterecektır            */
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {  /* taşmayı önlemek icin */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* responsive galeri icin stiller bitis*/
+
+
+/* iletisim formu icin stiller */
+
+input[type=text],input[type=tel], input[type=email] ,input[list=turler], textarea[ name=message], select {
+  width: 95 %;
+  padding:0 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+}
+
+input[type=submit] {
+
+  width :20%;
+  height: 35px;
+  margin : 15px 120px;
+  background-color: #d8bfd8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+	
+ background-color: #8c8c93;
+  
+ 
+}
+
+/*
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+*/
+
+/* iletisim formu icin stiller bitis */
+
+
+
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -53,4 +149,27 @@ body {
     display: block;
     text-align: left;
   }
+}
+
+/* iletisim sayfasi icin responsive kodu */
+
+.iletisim { 	/* ekran boyutu 700 pxden buyuk ekranlar ıcın   */
+  padding: 0px 6px;
+  float: left;
+  width: 49.99999%;
+ 
+}
+
+
+
+@media only screen and (max-width: 700px) { /*  ekran boyutu 700 pxden kücük ise          */
+  .iletisim {
+    width: 100%;
+  }
+}
+.baslik { 
+padding: 20px 200px;
+margin: 0px 20px 0px 15px;
+border-radius:5px;
+
 }
