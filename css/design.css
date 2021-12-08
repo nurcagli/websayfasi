@@ -50,15 +50,19 @@ div.desc {
 /* responsive galeri icin stiller bitis*/
 
 
+
+
+
 /* iletisim formu icin stiller */
 
 input[type=text],input[type=tel], input[type=email] ,input[list=turler], textarea[ name=message], select {
-  width: 95 %;
+  width: 99.9999 %;
   padding:0 5px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+
  
 }
 
@@ -74,20 +78,12 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-	
+input[type=submit]:hover {	
  background-color: #8c8c93;
   
  
 }
 
-/*
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-*/
 
 /* iletisim formu icin stiller bitis */
 
@@ -154,9 +150,9 @@ body {
 /* iletisim sayfasi icin responsive kodu */
 
 .iletisim { 	/* ekran boyutu 700 pxden buyuk ekranlar ıcın   */
-  padding: 0px 6px;
+  padding: 0px 0px;
   float: left;
-  width: 49.99999%;
+  width: 49.9999%;
  
 }
 
@@ -164,12 +160,90 @@ body {
 
 @media only screen and (max-width: 700px) { /*  ekran boyutu 700 pxden kücük ise          */
   .iletisim {
-    width: 100%;
+    width: 99.999%;
   }
 }
-.baslik { 
-padding: 20px 200px;
-margin: 0px 20px 0px 15px;
-border-radius:5px;
 
+
+.harita{
+width:500px;
+height:350px;
+margin : 15px 50px 50px;
+}
+
+
+@media only screen and (max-width: 700px) { /*  ekran boyutu 700 pxden kücük ise          */
+  .harita {
+    width: 76%;
+    margin : 15px 50px;
+  }
+}
+
+
+
+/*  breadcrumbs için stiller  */
+
+ul.breadcrumb {
+  padding: 1px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+
+/* */
+
+
+
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+  background-color: #8c8c93;
+}
+
+
+/* Style the subnav content - positioned absolute */
+.subnav-content { 
+  display: none;
+  z-index: 1;
+  background-color: #8c8c93;
+  position: absolute;
+  top:50px;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #d8bfd8;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
 }
