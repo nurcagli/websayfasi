@@ -9,6 +9,8 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- responsive menü için eklendi.-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
 		<title>Index</title>
 		
 	</head>
@@ -26,7 +28,7 @@
 						</div>	
 				  </div>
 			  <a href="iletisim.html">İletişim & Öneriler</a>
-			  <a href="aksesuar.html">Kitap Aksesuarları</a>
+			 
 			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
 			  </a>
@@ -35,16 +37,68 @@
 			
 			
 			<div style="background-color:#d8bfd8; padding:0px 0 px;" >
-			 <ul class="breadcrumb">
+			 <ul class="breadcrumb ">
 			  <li>Kitaplar</li>
-			    <li><a href="alintilar.html">Alıntılar</a></li>
+			    <li><a href="alintilar.html" style="color:black">Alıntılar</a></li>
 			</ul>
 			</div>
 			
 			
+				<!-- Sidebar -->
+				<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:21%"> <!-- w3schools cssi kullanıldı.degistir -->
+				 <h4 class="w3-bar-item" > <b> KİTAP ALINTILARI </b></h4>
+				 <a href="#" class="w3-bar-item w3-button"> Montaigne - Denemeler </a>
+				 <a href="#" class="w3-bar-item w3-button"> Grigoriy Petrov - Beyaz Zambaklar Ülkesinde</a>
+				 <a href="#" class="w3-bar-item w3-button"> Halid Hüseyni - Uçurtma Avcısı </a>
+				 <a href="#" class="w3-bar-item w3-button">  José Mauro de Vasconcelos - Şeker Portakalı </a>
+				 <a href="#" class="w3-bar-item w3-button">  Jack London - Beyaz Diş </a>
+				 <a href="#" class="w3-bar-item w3-button">  Dan Brown - Dijital Kale </a>
+				 <a href="#" class="w3-bar-item w3-button">  Dan Brown - Başlangıç </a>
+				 <a href="#" class="w3-bar-item w3-button">  Oğuz Atay - Tutunamayanlar </a>
+				 <a href="#" class="w3-bar-item w3-button">  Sabahattin Ali - İçimizdeki Şeytan </a>
+				  
+				</div>
 
-		
+		 <div style="margin-left:25%">
+			<!-- Carousel -->
+				<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+				  <!-- Indicators/dots -->
+				  <div class="carousel-indicators">
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+				  </div>
+
+				  <!-- The slideshow/carousel -->
+				  <div class="carousel-inner">
+					<div class="carousel-item active" style = "width:100%; height:auto">
+					  <img src="../image/book1.jpg" alt="book" class="d-block w-100 ">
+					</div>
+					<div class="carousel-item">
+					  <img src="../image/book1.jpg" alt="book" class="d-block w-100 ">
+					</div>
+					<div class="carousel-item">
+					  <img src="../image/book1.jpg" alt="book" class="d-block w-100 ">
+					</div>
+				  </div>
+
+				  <!-- Left and right controls/icons -->
+				  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				  </button>
+				</div>
 				
+				<div class="container-fluid mt-3">
+				  <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+				</div>
+
+				</div>
+
+							
 			</div>
 			
 			<script>
