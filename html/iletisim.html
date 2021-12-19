@@ -14,52 +14,57 @@
 
 	<body>
 		<div class="container">
+		
+				<div class="header">
+			   <h1>'The Good Night' Kitap Blogu</h1>
+			   </div>
+       </div>
+	   
+	   <div class="container">
 
-				<div class="topnav " id="myTopnav" >
-			  <a href="index.html" class="active">Ana Sayfa</a>
+			<div class="topnav " id="myTopnav" >
+			  <a href="index.html" class="active">ANA SAYFA</a>
 			  
 				  <div class="subnav">
-					<button class=subnavbtn" style= "background-color: #8c8c93; border:none ; float: left;display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;" > Kitaplar </button>
+					<button class=subnavbtn" style= "background-color: #eee; border:none ; float: left;display: block; color: black; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; font-weight:bold; " > KITAPLAR </button>
 						<div class="subnav-content">
-						  <a href="alintilar.html">Alıntılar</a>
-						  <a href="kitaplar.html">İncelemeler</a>
+						  <a href="alintilar.html">ALINTILAR</a>
+						  <a href="incelemeler.html">İNCELEMELER</a>
 						</div>	
 				  </div>
-			  <a href="iletisim.html">İletişim & Öneriler</a>
-		
+			  <a href="iletisim.html">ILETISIM & ONERILER</a>
+			 
 			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
 			  </a>
 			</div>
 			
-	
-				<div style="background-color: #eee; padding:1px 0px;" >
-			    <br>
+				<div style="background-color:#eee; padding:0px 0 px;" >
+
 				</div>
-				
 			
 				
 				  <div class ="iletisim" >
 					
-							<div style="padding:11px 40px 10px">
-							<h3>İletişim Formu </h3>
+							<div style="padding:28px 40px 10px">
+							<h4 style="font-family: Copperplate, Papyrus, fantasy; font-weight:bold; "> ILETISIM FORMU </h4>
 							<p></p>
 							
 						  <form  action="/action_page.php">
 						   
-								<label for="name"> <h6> İsminiz: </h6> </label> <br>
+								<label for="name"> <h6 style="font-family: Copperplate, Papyrus, fantasy; font-weight:bold; "> Isminiz: </h6> </label> <br>
 								<input type="text" id="name" name="İsim" size="45" value=""><br>
 							
-								<label for="phone"> <h6> Telefon Numaranız: </h6> </label> <br>
+								<label for="phone"> <h6 style="font-family: Copperplate, Papyrus, fantasy; font-weight:bold; "> Telefon Numaranız: </h6> </label> <br>
 								<input type="tel" id="phone" name="phone" size="45" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 								<br>
 								
-								<label for="email"> <h6> Mail Adresiniz: </h6> </label><br>
+								<label for="email"> <h6 style="font-family: Copperplate, Papyrus, fantasy; font-weight:bold; "> Mail Adresiniz: </h6> </label><br>
 								<input type="email" id="email" name="email" size="45" value="ornek@gmail.com">
 								<br>
 								<br>
 						
-								<h6> Hangi Tür Kitapların Sitemize Eklenmesini İstersiniz? </h6>
+								<h6 style="font-family: Copperplate, Papyrus, fantasy; font-weight:bold; "> Hangi Tür Kitapların Sitemize Eklenmesini Istersiniz? </h6>
 								 <input list="turler" size="30">
 								<datalist id="turler">
 								<option value="Dünya Klasikleri">
@@ -73,13 +78,13 @@
 								<br>
 								<br>
 								
-								<h6>Mesaj Bırakın:  <h6>
+								<h6 style="font-family: Copperplate, Papyrus, fantasy; font-weight:bold; ">Mesaj Bırakın:  <h6>
 								<textarea name="message" rows="10" cols="45" size="50">Buraya mesajınızı yazabilirsiniz.
 								</textarea>
 								<br>
 								
 								
-							<input type="submit" value="Submit">
+							<input type="submit" style="font-family: Copperplate, Papyrus, fantasy; font-weight:bold; " value="Submit">
 						
 						  </form>
 						  </div>
@@ -87,18 +92,25 @@
 				 
 				  <div class="iletisim" >
 					
-						<div class= "baslik"> <h6 style ="padding: 28px 55px 0px" > Bizi ziyaret edebilirsiniz. </h6> </div>
-							<div >
+						<div class= "baslik"> <h4 style ="padding: 28px 55px 20px; font-family: Copperplate, Papyrus, fantasy; font-weight:bold; "> BIZI   ZIYARET   EDEBILIRSINIZ. </h4> </div>
 						
-							<iframe class="harita" style="width:10px height:auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773977.2612696731!2d29.910136573119285!3d40.73235259887941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb5169652181b%3A0xeba807a5c78d9201!2sSakarya!5e0!3m2!1str!2str!4v1638526836087!5m2!1str!2str" allowfullscreen="" >
-							</iframe>
-					
+							
+							<div class="harita">
+							 <img src="../image/bookstore.jpg" alt="bookstore" >
 							</div>
 							
-							<div style= "padding:30px 55px 0px; height:160px; " >
+							
+							
+							<div>
+							<iframe class="harita"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773977.2612696731!2d29.910136573119285!3d40.73235259887941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb5169652181b%3A0xeba807a5c78d9201!2sSakarya!5e0!3m2!1str!2str!4v1638526836087!5m2!1str!2str" allowfullscreen="" >
+							</iframe>
+							</div>
+							
+							<div style= "padding:30px 55px 5px;  " >
 							<p> iletişim 
 							bilgilerini ekle 
-							</p>
+							<br>
+							<br>							</p>
 							</div>
 							
 							
