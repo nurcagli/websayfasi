@@ -26,7 +26,7 @@ blockquote {
 /* responsive galeri icin stiller */
 
 div.gallery {
-  border: 1px solid #ccc;
+  border: 5px solid #fff;
 }
 
 div.gallery:hover {
@@ -34,7 +34,7 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
+  width: 99%;
   height: auto;
 }
 
@@ -55,11 +55,29 @@ div.desc {
 
 @media only screen and (max-width: 700px) { /* ekran boyutu 700 pxden kücük ise fotografları ikili göstericek     */
   .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
+     width: 100%;
+    margin: 6px 0px;
   }
+
+.tr_bq {
+width: 50%;
 }
 
+}
+
+
+.tr_bq {
+ background-color: #eee;
+ border-radius: 15px;
+ border: 2px dotted rgb(226, 215, 197);
+ box-shadow: rgb(204, 204, 204) 0px 5px 15px;
+ height: auto; 
+margin: 10px 10px 30px 0px;
+ padding: 20px 15px 35px 15px;
+
+ text-align: justify;
+ width: 100%;
+}	
 @media only screen and (max-width: 500px) { /*  ekran boyutu 500 pxden kücük ise fotograflari tekli gosterecektır            */
   .responsive {
     width: 100%;
@@ -123,12 +141,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.topnav{
+.topnav {
+
   overflow: hidden;
   background-color: #eee;
  font-family: Copperplate, Papyrus, fantasy;
    font-weight: bold;
 }
+
 
 .topnav a {
   float: left;
@@ -152,15 +172,20 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+.topnav a{
+display:none; 
 }
 
-@media screen and (max-width: 600px) {
+.topnav{
+width:99.9%;
+}
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -190,9 +215,16 @@ body {
   .iletisim {
     width: 99.999%;
   }
+input[type=text],input[type=tel], input[type=email] ,input[list=turler], textarea[ name=message], select {
+width:99.9%;
+  height:40px;
+}
+input[type=submit]
+{
+width:35%;
 }
 
-
+}
 .harita{
 width:540px;
 height:200px;
@@ -200,11 +232,98 @@ margin : 15px 50px 10px;
 }
 
 
+@media only screen and (max-width: 700px) {
+.responsivee {
+  width: 100%;
+height: 200px;
+ }
+
+
+
+}
+
+
+
 @media only screen and (max-width: 700px) { /*  ekran boyutu 700 pxden kücük ise          */
   .harita {
-    width: 76%;
+    width: 80%;
     margin : 15px 50px;
   }
+
+
+/* The subnavigation menu */
+.subnav {
+display:none;
+  float: left;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content { 
+  display: none;
+  z-index: 1;
+  background-color: #eee;
+  position: absolute;
+  top:183px;
+  left:160px;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+ float: left;
+text-decoration: none;
+
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+
+  color: white;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+}
+
+
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content { 
+  display: none;
+  z-index: 1;
+  background-color: #eee;
+  position: absolute;
+  top:183px;
+  left:160px;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+ float: left;
+text-decoration: none;
+
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+
+  color: white;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
 }
 
 
@@ -238,37 +357,3 @@ ul.breadcrumb li a:hover {
 /* */
 
 
-/* The subnavigation menu */
-.subnav {
-  float: left;
-  overflow: hidden;
-  background-color: #eee;
-}
-
-/* Style the subnav content - positioned absolute */
-.subnav-content { 
-  display: none;
-  z-index: 1;
-  background-color: #eee;
-  position: absolute;
-  top:183px;
-  left:160px;
-}
-
-/* Style the subnav links */
-.subnav-content a {
- float: left;
-text-decoration: none;
-
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: #d8bfd8;
-  color: white;
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: block;
-}
